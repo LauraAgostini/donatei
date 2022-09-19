@@ -128,14 +128,63 @@ a{
 
 footer{ 
     background-image: url("/Doña\ Tei/Imagenes/Fondo.png"); 
-    height: 75px; 
+    height: 40%; 
     display: flex;
     justify-content:center; 
-    align-items: center;
+    align-items: center; 
+    flex-direction: column; 
 
 } 
 
-.redes{ 
-    padding:2%; 
+.Redes{   
+padding: 2%;  
+order: 1;   
+display: inline-flex; 
+justify-content: space-around;
+} 
 
+.Gallina{ 
+    display:flex; 
+    align-content: center; 
+    order: -1; 
+
+} 
+
+.Historia{ 
+    border-color: #37377a; 
+    display: grid;    
+    grid-template-columns: 28% 28% 44%; 
+    grid-template-rows:10%;
+    grid-template-areas: "H1 H1 H5"
+                         "H2 H2 H5" 
+                         "H2 H2 H5" 
+                         "H3 H3 H6" 
+                         "H4 H4 H6" 
+                         "H4 H4 H6";
+    column-gap: 5px; 
+    row-gap: 5px;
+}   
+
+.H1{ 
+    grid-area: H1;
+} 
+
+.H2{ 
+    grid-area: H2;
+} 
+
+.H3{ 
+    grid-area: H3;
+} 
+
+.H4{ 
+    grid-area: H4;
+} 
+
+.HA{ 
+    grid-area: H5;
+} 
+
+.HB{ 
+    grid-area: H6;
 }
