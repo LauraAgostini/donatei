@@ -136,7 +136,11 @@ a{
     display: flex;
     align-items: center; 
 }  
-@media screen and (max-width: 480px) {   
+@media screen and (max-width: 480px) { 
+     a{ 
+        font-size: 120%;  
+    } 
+   
     .Seccion{ 
         border-color: #37377a; 
         display: grid;  
@@ -192,7 +196,21 @@ a{
         grid-row: 2/3;
         background-color: rgba(253, 188, 162, 0.849);
         color: rgb(255, 255, 210);     
-} }
+} } 
+
+@media screen and (min-width: 480px) and (max-width:768px) 
+{ 
+.parrafo2{ 
+    font-size: 150%; } 
+.parrafo1{ 
+    font-size: 150%; } 
+.parrafo3{ 
+    font-size: 150%; } 
+a{ 
+ font-size: 140%;  
+        }  
+} 
+
 
 .Historia{ 
     border-color: #37377a; 
